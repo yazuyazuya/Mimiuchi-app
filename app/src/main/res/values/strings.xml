@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Mimiuchi</string>
+    <string name="title_activity_shop_details">ShopDetailsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="homeText">店舗一覧</string>
+
+    <string-array name="shops">
+        <item>店舗１</item>
+        <item>店舗２</item>
+        <item>店舗３</item>
+        <item>店舗４</item>
+        <item>店舗５</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>カテゴリ１</item>
+        <item>カテゴリ２</item>
+        <item>カテゴリ３</item>
+        <item>カテゴリ４</item>
+        <item>カテゴリ５</item>
+    </string-array>
+
+    <string-array name="count">
+        <item>来店回数１</item>
+        <item>来店回数２</item>
+        <item>来店回数３</item>
+        <item>来店回数４</item>
+        <item>来店回数５</item>
+    </string-array>
+
+    <string-array name="nextTimes">
+        <item>次まで１</item>
+        <item>次まで２</item>
+        <item>次まで３</item>
+        <item>次まで４</item>
+        <item>次まで５</item>
+    </string-array>
+
+    <string-array name="menuName">
+        <item>メニュー１</item>
+        <item>メニュー２</item>
+        <item>メニュー３</item>
+        <item>メニュー４</item>
+        <item>メニュー５</item>
+    </string-array>
+
+    <string-array name="markMenuDeadlines">
+        <item>2019/11/15(金)まで</item>
+        <item>2019/11/16(土)まで</item>
+        <item>2019/11/17(日)まで</item>
+        <item>2019/11/18(月)まで</item>
+        <item>2019/11/19(火)まで</item>
+    </string-array>
+
+    <string-array name="markMenuNames">
+        <item>選択メニュー１</item>
+        <item>選択メニュー２</item>
+        <item>選択メニュー３</item>
+        <item>選択メニュー４</item>
+        <item>選択メニュー５</item>
+    </string-array>
+
+    <string-array name="markMenuPrices">
+        <item>値段１</item>
+        <item>値段２</item>
+        <item>値段３</item>
+        <item>値段４</item>
+        <item>値段５</item>
+    </string-array>
+
+    <string-array name="markCouponDeadlines">
+        <item>2019/11/15(金)まで</item>
+        <item>2019/11/16(土)まで</item>
+        <item>2019/11/17(日)まで</item>
+        <item>2019/11/18(月)まで</item>
+        <item>2019/11/19(火)まで</item>
+    </string-array>
+
+    <string-array name="markCouponNames">
+        <item>選択クーポン１</item>
+        <item>選択クーポン２</item>
+        <item>選択クーポン３</item>
+        <item>選択クーポン４</item>
+        <item>選択クーポン５</item>
+    </string-array>
+
+    <string-array name="markCouponPrices">
+        <item>値段１</item>
+        <item>値段２</item>
+        <item>値段３</item>
+        <item>値段４</item>
+        <item>値段５</item>
+    </string-array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu">メニュー</string>
+    <string name="shop">店舗詳細</string>
+    <string name="coupon">クーポン</string>
+    <string name="shopdetail">店舗詳細</string>
+    <string name="マーカー一覧" />
+    <string name="marker">マーカー一覧</string>
+    <string name="deadline">有効期限</string>
+    <string name="couponName">クーポン名</string>
+    <string name="nedan">値段</string>
+    <string name="couponi">クーポン一覧</string>
+    <string name="mimiuti">みみうち</string>
+    <string name="err1">情報を取得できません</string>
+    <string name="err2">ネットワーク設定を確認してください</string>
+
+</resources>

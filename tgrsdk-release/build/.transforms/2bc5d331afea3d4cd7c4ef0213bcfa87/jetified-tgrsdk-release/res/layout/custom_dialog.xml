@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        >
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:contentDescription="dialogButtonOK"
+            android:scaleType="fitXY"
+            android:src="@drawable/tangerine_close_button" />
+        <ImageButton
+            android:layout_alignParentLeft="true"
+            android:id="@+id/dialogButtonBack"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:contentDescription="dialogButtonOK"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn__bk_back" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+
+            android:background="#999999"
+            ></RelativeLayout>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/tgr_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FFF"
+        android:layout_marginTop="50dp"
+        />
+     
+</RelativeLayout>

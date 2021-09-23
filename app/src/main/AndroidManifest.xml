@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mimiuchi">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name=".presenter.Globals"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon_ver7"
+        android:label="みみうち"
+        android:roundIcon="@drawable/appicon_ver7"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.activity.TutorialActivity"
+            android:theme="@style/WelcomeScreenTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activity.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <action android:name="android.intent.action.VIEW" /> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeaconTestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.MarkContentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.NetworkError"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.ShopDetailsActivity"
+            android:label="@string/title_activity_shop_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <!--
+            スプラッシュ画面
+            android:theme="@style/SplashTheme"
+            -->
+            <intent-filter>
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.tangerine.beaconreceiver.android.sdk.service.BeaconReceiverService"
+            android:exported="false" />
+        <service android:name="io.tangerine.beaconreceiver.android.sdk.service.NotificationIntentService">
+            <intent-filter android:priority="10000">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

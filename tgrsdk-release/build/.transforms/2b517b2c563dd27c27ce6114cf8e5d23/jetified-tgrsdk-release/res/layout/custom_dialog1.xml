@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- コンテンツ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:id="@+id/relativeLayout2">
+        <!-- タイトル -->
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title3"
+            android:padding="10dp"
+            android:textColor="#dddddd"
+            android:textSize="6pt" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:text="Title"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000"
+            android:textSize="6pt" />
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            card_view:cardCornerRadius="6dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/cardView1"
+            >
+            <ImageView
+                android:id="@+id/dialogButtonOK"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="dialogButtonOK"
+                android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+
+
+        <io.tangerine.beaconreceiver.android.sdk.application.RoundImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/banner_only_image"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/banner_only_bg"
+            />
+
+        <io.tangerine.beaconreceiver.android.sdk.application.RoundImageViewBottom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/banner_only_image2"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/none"
+            android:background="@drawable/banner_text_bg"
+            android:visibility="gone"
+            />
+
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/none"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:text="あいうえおかきくけこさしすせそたちつてとなにぬねにはひふへほまみむめもあいうえおかきくけこさしすせそたちつてとなにぬねに"
+            android:lines="2"
+            android:textColor="#333333"
+            android:textSize="6pt" />
+
+        <ImageView
+            android:layout_below="@+id/none"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/small_image_view"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            />
+        <TextView
+            android:id="@+id/message2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/none"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="45dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:text="あいうえおかきくけこさしすせそたちつてとなにぬねにはひふへほまみむめもあいうえおかきくけこさしすせそたちつてとなにぬねに"
+            android:lines="2"
+            android:visibility="invisible"
+            android:textColor="#333333"
+            android:textSize="6pt" />
+        <RelativeLayout
+            android:id="@+id/title_only_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/only_title_cover"
+            android:visibility="invisible"
+            >
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                card_view:cardCornerRadius="6dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cardView4"
+                >
+                <ImageView
+                    android:id="@+id/dialogButtonOK4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:contentDescription="dialogButtonOK"
+                    android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="30dp"
+                android:lines="2"
+                android:gravity="center|left"
+                android:id="@+id/only_title_text_view"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/positive_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:layout_alignTop="@+id/banner_only_image"
+            android:layout_alignBottom="@+id/banner_only_image"
+            android:background="#00000000"
+            android:textColor="#333333" />
+
+        <Button
+            android:id="@+id/positive_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/none"
+            android:layout_alignBottom="@+id/banner_only_image2"
+            android:background="#00000000"
+            android:textColor="#333333"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/close_image_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@id/none"
+            android:text="Show more"
+            android:src="@drawable/tangerine_close_button"
+            android:background="#00000000"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/message2"-->
+            <!--android:layout_width="330dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/message"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="-5dp"-->
+            <!--android:lineSpacingExtra="6dp"-->
+            <!--android:text="MessageMessageMeessageMessageMsstttttage"-->
+            <!--android:textColor="#333333"-->
+            <!--android:textSize="15sp" />-->
+
+
+        <!--/>-->
+
+    </RelativeLayout>
+
+
+
+    <!-- Close ボタン -->
+
+
+
+</RelativeLayout>
